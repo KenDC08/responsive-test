@@ -1,0 +1,365 @@
+/*Universal*/
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+/*Nav Section*/
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid burlywood;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  padding-left: 3.125rem;
+}
+
+.nav-list li:last-child {
+  margin-right: 0.625rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  background-color: burlywood;
+  vertical-align: bottom;
+  border: 0.0625rem solid burlywood;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+  transition: font-size 1s 0.2s;
+}
+
+.nav-list li a:hover {
+  background-color: burlywood;
+  font-size: 1.25rem;
+}
+
+.logo img {
+  height: 3.5rem;
+}
+
+.nav-area figcaption {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+  color: burlywood;
+  font-family: "Alegreya", serif;
+}
+
+@media only screen and (max-width: 57em) {
+  .logo image {
+    height: 1.5rem;
+  }
+  .nav-area {
+    border-bottom: none;
+    margin: 0 auto;
+  }
+  .nav-list li {
+    padding-left: 1.125rem;
+  }
+}
+
+@media only screen and (max-width: 55em) {
+  .nav-list li {
+    padding-left: 0.125rem;
+  }
+}
+
+/*Main Section*/
+
+/*Banner Section*/
+
+.banner {
+  background-image: url("./media/landing\ pic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 140vh; */
+  position: relative;
+  top: 5.175rem;
+  padding-bottom: 2.5rem;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  word-spacing: 0.125rem;
+  color: azure;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  padding-top: 4.25rem;
+  padding-bottom: 2rem;
+}
+
+.banner-content p {
+  color: aliceblue;
+  font-size: 1.2rem;
+  line-height: 1.875rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-buttons .but1 {
+  display: inline-flex;
+}
+
+.banner-buttons .but1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: burlywood;
+  border: 0.0625rem solid burlywood;
+  border-radius: 1.3125rem;
+  padding: 0.8125rem 3.5rem;
+  margin: 0 2rem;
+  letter-spacing: 0.125rem;
+}
+
+.unsplash {
+  padding-top: 2.125rem;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.unsplash a {
+  color: white;
+}
+
+.unsplash a:hover {
+  text-decoration: none;
+}
+
+.banner-buttons .camp a {
+  background-color: transparent;
+}
+
+.banner-buttons .camp a:hover {
+  background-color: white;
+  color: black;
+}
+
+.banner-buttons .book a:hover {
+  color: black;
+}
+
+/*Banner icon section*/
+
+.banner-icons img {
+  height: 5.5rem;
+  /* background-color: white; */
+  padding: 3.125rem;
+}
+
+.banner-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin: 3.125rem 3.125rem;
+  opacity: 50%;
+}
+
+.hike {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1.5625rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.camp2 {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1.5625rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.tent {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1.5625rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.event {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1.5625rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.icon {
+  width: 100%;
+}
+
+.banner-icons figcaption {
+  position: relative;
+  bottom: 2rem;
+}
+
+@media only screen and (max-width: 56em) {
+  .banner-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 56em) {
+  .banner {
+    height: 100%;
+  }
+}
+
+/*About Section*/
+.about-us img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 1rem solid burlywood;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.about-content {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.about-button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: burlywood;
+  border: 0.0625rem solid burlywood;
+  border-radius: 1.3125rem;
+  padding: 0.8125rem 3.5rem;
+  margin: 0 2rem;
+  letter-spacing: 0.125rem;
+}
+
+/*Places to visit Section*/
+
+.getaway {
+  background-color: burlywood;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 0.625rem;
+  row-gap: 0.825rem;
+}
+
+.places img {
+  height: 90%;
+  width: 85%;
+  filter: brightness(80%);
+  border-radius: 1.875rem;
+}
+
+.go-to img {
+  overflow: hidden;
+}
+
+.places figcaption {
+  color: white;
+  font-size: 1.2rem;
+  background-color: black;
+  opacity: 50%;
+  width: 50%;
+  margin: 0 auto;
+  /* position: relative;
+  bottom: 6rem; */
+}
+
+.getaway h1 {
+  font-size: 4rem;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 1.25rem;
+  font-weight: bold;
+}
+
+.getaway p {
+  font-size: 1.15rem;
+  color: white;
+  padding-bottom: 3rem;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.875rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .places figcaption {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+
+/*footer section*/
+
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 1rem 0.5rem 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.location {
+  text-align: right;
+}
+.copyright {
+  text-align: left;
+}
